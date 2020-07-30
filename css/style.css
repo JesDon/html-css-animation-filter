@@ -166,8 +166,9 @@
     width: 60px;
     height: 20px;
 }
-.ex-12-top-white:hover{
-  animation: es12a 5s linear;
+
+.ex-12-button:hover > .ex-12-top-white{
+  animation: es12a 3s linear;
 }
 @keyframes es12a {
   0% {
@@ -177,9 +178,8 @@
     left: 60%;
   }
 }
-
-.ex-12-bottom-white:hover{
-  animation: es12b 5s linear;
+.ex-12-button:hover > .ex-12-bottom-white{
+  animation: es12b 3s linear;
 }
 @keyframes es12b {
   0% {
@@ -189,10 +189,6 @@
     right: 60%;
   }
 }
-
-
-
-
 
 
 .ex-13-button {
@@ -223,4 +219,54 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+.ex-13-button:hover > .ex-13-top-white{
+  animation: es13a 5s linear;
+}
+@keyframes es13a {
+  0% {
+    left: 10%;
+    top: -10px;
+  }
+  25%{
+    left: 60%;
+    top: -10px;
+  }
+  50% {
+    left: 60%;
+    top: 50px;
+  }
+  75% {
+    left: 10%;
+    top: 50px;
+  }
+  100%{
+    left: 10%;
+    top: -10px;
+  }
+}
+.ex-13-button:hover > .ex-13-bottom-white{
+  animation: es13b 5s linear;
+}
+@keyframes es13b {
+  0% {
+    bottom: -10px;
+    right: 20%;
+  }
+  25%{
+    bottom: -10px;
+    right: 60%;
+  }
+  50% {
+    bottom: 50px;
+    right: 60%;
+  }
+  75% {
+    bottom: 50px;
+    right: 20%;
+  }
+  100%{
+    bottom: -10px;
+    right: 20%;
+  }
 }
