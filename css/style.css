@@ -79,26 +79,65 @@
 
 .ex-8-img{
     width: 500px;
-    transition: filter 3s;
-    transition: border-radius 1s;
+    transition: 3s;
 }
 .ex-8-img:hover{
-  filter: saturate(0.3) opacity(0.2);
-  border-radius: 10%;
+  filter: opacity(0.7) sepia(.5);
+  border-radius: 30px;
 }
 
 
-.ex-9-img {
-    margin: 50px 100px;
-    width: 400px;
+.ex-9-img{
+  margin: 50px 100px;
+  width: 400px;
+  transition: all 3s;
 }
-.ex-10-icon {
+.ex-9-img:hover{
+  filter: saturate(3) brightness(2);
+  border-radius: 50%;
+  transform: scale(1.5);
+}
+
+
+
+.ex-10-icon{
     font-size: 60px;
 }
+.ex-10-icon:hover{
+  animation: es10 5s linear;
+  animation-iteration-count: infinite;
+}
+@keyframes es10 {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(365deg)
+  }
+}
+
+
 .ex-11-icon {
     font-size: 60px;
 }
-.ex-12-button, .ex-13-button {
+.ex-11-icon:hover{
+  animation: es11 5s linear;
+  animation-iteration-count: infinite;
+}
+@keyframes es11 {
+  0% {
+    transform: rotate(0deg)
+  }
+  50% {
+    transform: rotate(270deg)
+  }
+  100%{
+    transform: rotate(0deg)
+  }
+}
+
+
+.ex-12-button{
     position: relative;
     display: block;
     width: 200px;
@@ -111,7 +150,7 @@
     text-align: center;
     text-decoration: none;
 }
-.ex-12-top-white, .ex-13-top-white {
+.ex-12-top-white{
     position: absolute;
     top: -10px;
     left: 10%;
@@ -119,7 +158,65 @@
     width: 60px;
     height: 20px;
 }
-.ex-12-bottom-white, .ex-13-bottom-white {
+.ex-12-bottom-white{
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+.ex-12-top-white:hover{
+  animation: es12a 5s linear;
+}
+@keyframes es12a {
+  0% {
+    left: 10%;
+  }
+  100%{
+    left: 60%;
+  }
+}
+
+.ex-12-bottom-white:hover{
+  animation: es12b 5s linear;
+}
+@keyframes es12b {
+  0% {
+    right: 20%;
+  }
+  100%{
+    right: 60%;
+  }
+}
+
+
+
+
+
+
+.ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+.ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+.ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
     right: 20%;
